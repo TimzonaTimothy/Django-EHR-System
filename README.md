@@ -67,10 +67,6 @@
       The credentials that you need to set up are: Mailtrap credentials, SSLCommerz Credentials. 
 
 
-# MKDocs Documentation and Youtube Video
-- [Youtube](https://youtu.be/TSR00OKBSCY) video link of MKDocs documentation on our Healthstack project.
-- Checkout out the [MKdocs documentation](https://jawwad-fida.github.io/HealthStack-System/) to see screenshots of our project.
-
 # Some Screenshots
 
 ## Home page
