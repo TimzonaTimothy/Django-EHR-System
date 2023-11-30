@@ -1,40 +1,32 @@
-import email
-from email import message
-from multiprocessing import context
-from turtle import title
+# from turtle import title
 from django.shortcuts import render, redirect
 # from django.contrib.auth.models import User
-from django.contrib.auth.forms import UserCreationForm
-from hospital_admin.views import prescription_list
-from .forms import DoctorUserCreationForm, DoctorForm
+from doctor.forms import DoctorUserCreationForm
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.views.decorators.cache import cache_control
 from hospital.models import User, Patient
-from hospital_admin.models import Admin_Information,Clinical_Laboratory_Technician
-from .models import Doctor_Information, Appointment, Education, Experience, Prescription_medicine, Report,Specimen,Test, Prescription_test, Prescription, Doctor_review
-from hospital_admin.models import Admin_Information,Clinical_Laboratory_Technician, Test_Information
-from .models import Doctor_Information, Appointment, Education, Experience, Prescription_medicine, Report,Specimen,Test, Prescription_test, Prescription
+from doctor.models import Doctor_Information, Appointment, Education, Experience, Prescription_medicine, Report,Specimen,Test, Prescription_test, Prescription, Doctor_review
+from hospital_admin.models import Test_Information
+from doctor.models import Doctor_Information, Appointment, Education, Experience, Prescription_medicine, Report,Specimen,Test, Prescription_test, Prescription
 from django.db.models import Q, Count
 from django.contrib.auth.signals import user_logged_in, user_logged_out
 from django.dispatch import receiver
 import random
 import string
-from datetime import datetime, timedelta
+from datetime import datetime
 import datetime
-import re
 from django.core.mail import BadHeaderError, send_mail
 from django.template.loader import render_to_string
 from django.http import HttpResponse
 from django.utils.html import strip_tags
 from io import BytesIO
-from urllib import response
 from django.shortcuts import render
 from django.template.loader import get_template
 from django.http import HttpResponse
 from xhtml2pdf import pisa
-from .models import Report
+from doctor.models import Report
 from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
