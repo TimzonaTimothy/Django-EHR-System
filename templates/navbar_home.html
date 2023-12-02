@@ -10,11 +10,12 @@
       </span>
     </a>
      <a href="{% url 'hospital_home'%}" class="navbar-brand logo">
-      <img
+      {% comment %} <img
         src="{% static 'HealthStack-System/images/Normal/logo.jpg' %}"
         class="img-fluid"
         alt="Logo"
-      /> 
+      />  {% endcomment %}
+      <h2 style="color:blue;font-weight:bold;">HealthLink</h2>
     </a>
   </div>
   <div class="main-menu-wrapper">
