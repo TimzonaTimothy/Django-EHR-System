@@ -55,8 +55,7 @@ INSTALLED_APPS = [
     'widget_tweaks',
     'rest_framework',
     'ChatApp.apps.ChatappConfig',
-    'debug_toolbar',
- 
+    
 
 ]
 
